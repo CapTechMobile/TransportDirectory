@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/car_list_fragment">
+
+    <fragment
+        android:id="@+id/car_list_fragment"
+        android:name="com.captechventures.transportdirectory.fragments.CarListFragment"
+        android:label="@string/cars_title"
+        tools:layout="@layout/fragment_car_list">
+
+        <action
+            android:id="@+id/action_car_list_fragment_to_car_detail_fragment"
+            app:destination="@id/car_detail_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/car_detail_fragment"
+        android:name="com.captechventures.transportdirectory.fragments.CarDetailFragment"
+        android:label="@string/car_detail"
+        tools:layout="@layout/fragment_car_detail">
+        <argument
+            android:name="vin"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

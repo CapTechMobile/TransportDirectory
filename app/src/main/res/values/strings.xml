@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TransportDirectory</string>
+    <string name="cars_title">Cars</string>
+    <string name="car_detail">Car Details</string>
+    <string name="car_image_logo">The manufacturers logo</string>
+    <string name="toggle_favorite">Toggle Favorites</string>
+    <string name="color_label">Color:</string>
+    <string name="add_to_favorite">Added to favorites</string>
+    <string name="remove_from_favorite">Removed from favorites</string>
+</resources>
